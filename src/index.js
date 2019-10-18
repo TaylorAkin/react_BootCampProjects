@@ -2,8 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import DigitalClock from './Clock/DigitalClock';
-import CountDownTimer from './Clock/CounterDownTimer'
-import TicTac from './TicTacToe/tictac'
+import CountDownTimer from './Clock/CounterDownTimer';
+import TicTac from './TicTacToe/TicTac';
+import ToDoList from './ToDo/ToDoList';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js'
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -17,10 +20,10 @@ class App extends React.Component {
 
 
       <div>
-
         <DigitalClock />
         <CountDownTimer />
         <TicTac />
+        <ToDoList />
       </div>
 
 
@@ -28,7 +31,7 @@ class App extends React.Component {
   }
 }
 
-export default App
+export default App;
 
 
 ReactDOM.render(<App />, document.getElementById('root'));
